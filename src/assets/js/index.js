@@ -61,3 +61,54 @@ window.addEventListener("click", (e) => {
 });
 
 
+// hero banner background animation
+const canvas = document.getElementById("starCanvas");
+const ctx = canvas.getContext("2d");
+
+function resizeCanvas() {
+    canvas.width = canvas.offsetWidth;
+    canvas.height = canvas.offsetHeight;
+}
+resizeCanvas();
+
+let stars = [];
+const STAR_COUNT = 250;
+
+function createStars() {
+    stars = [];
+    for (let i = 0; i < STAR_COUNT; i++) {
+        stars.push({
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height,
+            size: Math.random() * 2 + 0.5,
+            speed: 0.3 + Math.random() * 0.7,
+            alpha: Math.random() * 0.7 + 0.3
+        });
+    }
+}
+
+function animateStars() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    stars.forEach((s) => {
+        ctx.fillStyle = `rgba(255, 255, 255, ${s.alpha})`;
+        ctx.fillRect(s.x, s.y, s.size, s.size);
+
+        s.y += s.speed;
+
+        if (s.y > canvas.height) {
+            s.y = -2;
+            s.x = Math.random() * canvas.width;
+        }
+    });
+
+    requestAnimationFrame(animateStars);
+}
+
+createStars();
+animateStars();
+
+window.addEventListener("resize", () => {
+    resizeCanvas();
+    createStars();
+});

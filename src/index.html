@@ -9,6 +9,7 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link rel="icon" href="./assets/icons/fav.png" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script
       src="https://kit.fontawesome.com/7f3902ee47.js"
@@ -17,7 +18,9 @@
   </head>
   <body class="bg-bg">
     <!-- navbar -->
-    <nav class="flex items-center justify-between px-6 py-4">
+    <nav
+      class="sticky top-0 left-0 z-200 flex items-center justify-between bg-transparent px-6 py-4 backdrop-blur-sm"
+    >
       <!-- Left: Logo + Text -->
       <div class="flex items-center gap-2">
         <img src="./assets/images/logo.png" alt="logo" class="h-12 w-12" />
@@ -26,40 +29,11 @@
 
       <div id="nav-items" class="hidden md:block">
         <ul id="nav-items" class="flex items-center gap-2">
-          <a href="#hero"
-            ><li
-              class="nav-link" >
-              Hero
-            </li></a
-          >
-          <a href="#features"
-            ><li
-              class="nav-link"
-            >
-              Features
-            </li></a
-          >
-          <a href="#technologies"
-            ><li
-              class="nav-link"
-            >
-              Technologies
-            </li></a
-          >
-          <a href="#templates"
-            ><li
-              class="nav-link"
-            >
-              Templates
-            </li></a
-          >
-          <a href="#pricing"
-            ><li
-              class="nav-link"
-            >
-              Pricing
-            </li></a
-          >
+          <a href="#hero"><li class="nav-link">Hero</li></a>
+          <a href="#features"><li class="nav-link">Features</li></a>
+          <a href="#technologies"><li class="nav-link">Technologies</li></a>
+          <a href="#templates"><li class="nav-link">Templates</li></a>
+          <a href="#pricing"><li class="nav-link">Pricing</li></a>
         </ul>
       </div>
 
@@ -81,84 +55,68 @@
         class="absolute top-14 right-6 z-100 hidden rounded-xl bg-transparent p-2 backdrop-blur-xs"
       >
         <ul id="drop-down-list" class="-100 space-y-8">
-          <a href="#hero"
-            ><li
-              class="dropDown-nav-link"
-            >
-              Hero
-            </li></a
-          >
-          <a href="#features"
-            ><li
-              class="dropDown-nav-link"
-            >
-              Features
-            </li></a
-          >
+          <a href="#hero"><li class="dropDown-nav-link">Hero</li></a>
+          <a href="#features"><li class="dropDown-nav-link">Features</li></a>
           <a href="#technologies"
-            ><li
-              class="dropDown-nav-link"
-            >
-              Technologies
-            </li></a
+            ><li class="dropDown-nav-link">Technologies</li></a
           >
-          <a href="#templates"
-            ><li
-              class="dropDown-nav-link"
-            >
-              Templates
-            </li></a
-          >
-          <a href="#pricing"
-            ><li
-              class="dropDown-nav-link"
-            >
-              Pricing
-            </li></a
-          >
+          <a href="#templates"><li class="dropDown-nav-link">Templates</li></a>
+          <a href="#pricing"><li class="dropDown-nav-link">Pricing</li></a>
         </ul>
       </div>
     </nav>
 
     <!-- hero section -->
-    <section
-      id="hero"
-      class="mb-24 grid grid-cols-1 items-center justify-between gap-6 px-6 lg:h-[calc(100vh-65px)] lg:grid-cols-3"
-    >
-      <div class="order-2 col-span-1 flex flex-col lg:order-1">
-        <h1 class="my-4 text-4xl font-extrabold text-black dark:text-white">
-          A Complete Admin UI Kit built on <br /><span
-            class="animated-gradient bg-linear-to-bl from-violet-500 to-fuchsia-500 bg-clip-text text-transparent"
-            >HTML & Tailwind CSS.</span
-          >
-        </h1>
-        <p>
-          Tailux is a versatile React 19 and TailwindCSS v4 UI Kit featuring
-          components, <br />
-          dashboards, forms, datatables, and app templates to help you build
-          applications faster than ever.
-        </p>
-        <span class="my-4 flex flex-wrap items-center gap-4">
-          <!-- From Uiverse.io by satyamchaudharydev -->
-          <!-- From Uiverse.io by adamgiebl -->
-          <a href="#templates">
-            <button>
-              <svg
-                height="24"
-                width="24"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M0 0h24v24H0z" fill="none"></path>
-                <path
-                  d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
-                  fill="currentColor"
-                ></path>
-              </svg>
-              <span>Live Demo</span>
-            </button>
-          </a>
-          <!-- From Uiverse.io by StealthWorm -->
+<section
+  id="hero"
+  class="relative mb-24 px-6 lg:h-[calc(100vh-65px)] overflow-hidden"
+>
+  <!-- ⭐ Background Animation -->
+  <canvas id="starCanvas" class="absolute inset-0 w-full h-full pointer-events-none"></canvas>
+
+  <!-- ⭐ Hero Grid Content -->
+  <div class="relative z-10 grid grid-cols-1 items-center gap-6 lg:grid-cols-3">
+    
+    <!-- Left Content -->
+    <div class="order-2 col-span-1 flex flex-col lg:order-1">
+      <h1 class="my-4 text-4xl font-extrabold text-black dark:text-white">
+        A Complete Admin UI Kit built on <br />
+        <span
+          class="animated-gradient bg-linear-to-bl from-violet-500 to-fuchsia-500 bg-clip-text text-transparent"
+        >
+          HTML & Tailwind CSS.
+        </span>
+      </h1>
+
+      <p>
+        SavvyFi is a versatile HTML 5 and TailwindCSS v4 UI Kit featuring
+        components, <br />
+        dashboards, cards, datacharts, and app templates to help you build
+        applications faster than ever.
+      </p>
+
+      <span class="my-4 flex flex-wrap items-center gap-4">
+        <!-- Live Demo Button -->
+        <a href="#templates">
+          <button>
+            <svg
+              height="24"
+              width="24"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M0 0h24v24H0z" fill="none"></path>
+              <path
+                d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
+                fill="currentColor"
+              ></path>
+            </svg>
+            <span>Live Demo</span>
+          </button>
+        </a>
+
+        <!-- Get Now Button -->
+        <a href="https://themeforest.net/user/pixelaxis" target="_blank">
           <button type="button" class="btn">
             <strong>Get Now</strong>
             <div id="container-stars">
@@ -170,21 +128,27 @@
               <div class="circle"></div>
             </div>
           </button>
-        </span>
-      </div>
-      <div class="order-1 col-span-2 lg:order-2">
-        <div class="w-full bg-gray-700 lg:h-[calc(100vh-65px)]">
-          <video
-            src="./assets/videos/My Video3.mp4"
-            class="aspect-video h-full w-full object-cover lg:aspect-square"
-            autoplay
-            muted
-            loop
-            playsinline
-          ></video>
-        </div>
-      </div>
-    </section>
+        </a>
+      </span>
+    </div>
+
+    <!-- Right Video Area -->
+<div class="order-1 col-span-2 lg:order-2">
+  <div class="w-full lg:h-[calc(100vh-65px)] rounded-xl overflow-hidden flex items-center justify-center">
+    <iframe
+      src="https://www.youtube.com/embed/shKexhiJ2x8?autoplay=1&mute=1"
+      frameborder="0"
+      allow="autoplay; encrypted-media"
+      allowfullscreen
+      class="w-full aspect-video"
+    ></iframe>
+  </div>
+</div>
+
+
+  </div>
+</section>
+
     <!-- details section -->
     <section class="mx-auto w-[90%] sm:w-[80%] lg:max-w-[70%]">
       <!-- features section -->
@@ -196,9 +160,7 @@
         <div
           class="grid grid-cols-1 items-center justify-center gap-8 sm:grid-cols-2 lg:grid-cols-3"
         >
-          <div
-            class="flex flex-col justify-center gap-4 rounded-xl border border-gray-800 p-6"
-          >
+          <div class="feature-card">
             <img src="./assets/images/features.webp" alt="" />
             <h3 class="text-xl font-bold">Over 100 Components</h3>
             <p class="text-sm">
@@ -207,9 +169,7 @@
             </p>
           </div>
 
-          <div
-            class="flex flex-col justify-center gap-4 rounded-xl border border-gray-800 p-6"
-          >
+          <div class="feature-card">
             <img src="./assets/images/features-layouts.webp" alt="" />
             <h3 class="text-xl font-bold">Rich Layouts and Colors</h3>
             <p class="text-sm">
@@ -217,9 +177,7 @@
               stunning user interfaces
             </p>
           </div>
-          <div
-            class="flex flex-col justify-center gap-4 rounded-xl border border-gray-800 p-6"
-          >
+          <div class="feature-card">
             <img src="./assets/images/features-responsive.webp" alt="" />
             <h3 class="text-xl font-bold">Ultra-Responsive Layouts</h3>
             <p class="text-sm">
@@ -227,58 +185,39 @@
               tablet, and desktop devices.
             </p>
           </div>
-          <div
-            class="flex flex-col justify-center gap-4 rounded-xl border border-gray-800 p-6"
-          >
+          <div class="feature-card">
             <h3 class="text-xl font-bold">10+ Stunning Pages</h3>
             <p class="text-sm">
-              Pages for analytics, money, crypto, education, healthcare,
-              and more to track and visualize data effectively.
+              Pages for analytics, money, crypto, education, healthcare, and
+              more to track and visualize data effectively.
             </p>
           </div>
-          <div
-            class="flex flex-col justify-center gap-4 rounded-xl border border-gray-800 p-6"
-          >
+          <div class="feature-card">
             <h3 class="text-xl font-bold">Extensive Pages & Prototypes</h3>
             <p class="text-sm">
               Over 40 pages, including blog, user profiles, FAQ, pricing,
               sign-in, and prototypes, for rapid development.
             </p>
           </div>
-          <div
-            class="flex flex-col justify-center gap-4 rounded-xl border border-gray-800 p-6"
-          >
+          <div class="feature-card">
             <h3 class="text-xl font-bold">Advanced Data Charts</h3>
             <p class="text-sm">
-              20+ charts for managing cards, bills, subscriptions, and more
-              with powerful filtering and customization options.
+              20+ charts for managing cards, bills, subscriptions, and more with
+              powerful filtering and customization options.
             </p>
           </div>
-          <div
-            class="flex flex-col justify-center gap-4 rounded-xl border border-gray-800 p-6"
-          >
+          <div class="feature-card">
             <h3 class="text-xl font-bold">Comprehensive Documentation</h3>
             <p class="text-sm">
               Well-documented components with a starter kit and step-by-step
               guides for seamless integration and customization.
             </p>
           </div>
-          <div
-            class="flex flex-col justify-center gap-4 rounded-xl border border-gray-800 p-6"
-          >
+          <div class="feature-card">
             <h3 class="text-xl font-bold">Versatile Layout Options</h3>
             <p class="text-sm">
               Rich layouts with bordered or shadowed cards, enabling
               feature-rich, visually striking applications.
-            </p>
-          </div>
-          <div
-            class="flex flex-col justify-center gap-4 rounded-xl border border-gray-800 p-6"
-          >
-            <h3 class="text-xl font-bold">Multi-Language Support</h3>
-            <p class="text-sm">
-              Supports both LTR and RTL languages using i18next.js for truly
-              global application development.
             </p>
           </div>
         </div>
@@ -293,9 +232,7 @@
         <div
           class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
         >
-          <div
-            class="group cursor-pointer gap-4 rounded-xl border border-gray-800 p-6"
-          >
+          <div class="page-card group">
             <i
               class="fa-brands fa-html5 hover-rotate text-5xl text-red-500"
             ></i>
@@ -304,9 +241,7 @@
               HTML is the standard markup language for creating web pages.
             </p>
           </div>
-          <div
-            class="group cursor-pointer gap-4 rounded-xl border border-gray-800 p-6"
-          >
+          <div class="page-card group">
             <i
               class="fa-brands fa-css3 hover-rotate text-5xl text-blue-500"
             ></i>
@@ -315,9 +250,7 @@
               CSS is a language used to style and layout web pages.
             </p>
           </div>
-          <div
-            class="group cursor-pointer gap-4 rounded-xl border border-gray-800 p-6"
-          >
+          <div class="page-card group">
             <img
               src="./assets/icons/icons8-tailwind-css-48.png "
               alt="Tailwind CSS"
@@ -328,9 +261,7 @@
               Tailwind CSS is a utility-first CSS framework.
             </p>
           </div>
-          <div
-            class="group cursor-pointer gap-4 rounded-xl border border-gray-800 p-6"
-          >
+          <div class="page-card group">
             <i
               class="fa-brands fa-square-js hover-rotate text-5xl text-yellow-500"
             ></i>
@@ -339,9 +270,7 @@
               JavaScript is a language for adding dynamic features to web pages.
             </p>
           </div>
-          <div
-            class="group cursor-pointer gap-4 rounded-xl border border-gray-800 p-6"
-          >
+          <div class="page-card group">
             <i
               class="fa-solid fa-icons hover-rotate text-5xl text-green-500"
             ></i>
@@ -350,9 +279,7 @@
               Lucid Icons is a free collection of open-source icons for apps.
             </p>
           </div>
-          <div
-            class="group cursor-pointer gap-4 rounded-xl border border-gray-800 p-6"
-          >
+          <div class="page-card group">
             <img
               src="./assets/icons/webpack-svgrepo-com.svg"
               alt="React"
@@ -363,9 +290,7 @@
               Webpack is a tool that bundles JavaScript modules into one file.
             </p>
           </div>
-          <div
-            class="group cursor-pointer gap-4 rounded-xl border border-gray-800 p-6"
-          >
+          <div class="page-card group">
             <img
               src="./assets/icons/Chartjs--Streamline-Svg-Logos.svg"
               alt="React"
@@ -377,9 +302,7 @@
             </p>
           </div>
 
-          <div
-            class="group cursor-pointer gap-4 rounded-xl border border-gray-800 p-6"
-          >
+          <div class="page-card group">
             <img
               src="./assets/icons/google-fonts-seeklogo.png"
               alt="Google Fonts"
@@ -403,9 +326,9 @@
           class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
         >
           <div class="row-span-8">
-            <ul id="template-list" class="tabs sticky top-6 space-y-2">
+            <ul id="template-list" class="tabs sticky top-20 space-y-2">
               <li
-                class="active flex w-full cursor-pointer items-center gap-2 rounded-xl px-6 py-2 text-lg font-bold transition-all duration-300 ease-in-out hover:text-primary"
+                class="active hover:text-primary flex w-full cursor-pointer items-center gap-2 rounded-xl px-6 py-2 text-lg font-bold transition-all duration-300 ease-in-out"
               >
                 <span>
                   <svg
@@ -426,7 +349,7 @@
                 <span>Light</span>
               </li>
               <li
-                class="flex w-full cursor-pointer items-center gap-2 rounded-xl px-6 py-2 text-lg font-bold transition-all duration-300 ease-in-out hover:text-primary"
+                class="hover:text-primary flex w-full cursor-pointer items-center gap-2 rounded-xl px-6 py-2 text-lg font-bold transition-all duration-300 ease-in-out"
               >
                 <span>
                   <svg
@@ -452,7 +375,7 @@
 
           <!-- dashboard -->
           <a
-            href="https://savvifi-html.vercel.app/index.html?theme=light"
+            href="https://savvyfi-html.vercel.app/index.html?theme=light"
             target="_blank"
             class="lightPages"
           >
@@ -470,7 +393,7 @@
           </a>
           <!-- card -->
           <a
-            href="https://savvifi-html.vercel.app/my-card.html?theme=light"
+            href="https://savvyfi-html.vercel.app/my-card.html?theme=light"
             target="_blank"
             class="lightPages"
           >
@@ -488,7 +411,7 @@
           </a>
           <!-- transactions -->
           <a
-            href="https://savvifi-html.vercel.app/transaction-1.html?theme=light"
+            href="https://savvyfi-html.vercel.app/transaction-1.html?theme=light"
             target="_blank"
             class="lightPages"
           >
@@ -509,7 +432,7 @@
           </a>
           <!-- gols -->
           <a
-            href="https://savvifi-html.vercel.app/goals.html?theme=light"
+            href="https://savvyfi-html.vercel.app/goals.html?theme=light"
             target="_blank"
             class="lightPages"
           >
@@ -527,7 +450,7 @@
           </a>
           <!-- gamified -->
           <a
-            href="https://savvifi-html.vercel.app/gamified-savings.html?theme=light"
+            href="https://savvyfi-html.vercel.app/gamified-savings.html?theme=light"
             target="_blank"
             class="lightPages"
           >
@@ -548,7 +471,7 @@
           </a>
           <!-- insights -->
           <a
-            href="https://savvifi-html.vercel.app/insights.html?theme=light"
+            href="https://savvyfi-html.vercel.app/insights.html?theme=light"
             target="_blank"
             class="lightPages"
           >
@@ -569,7 +492,7 @@
           </a>
           <!-- budgets -->
           <a
-            href="https://savvifi-html.vercel.app/budgets.html?theme=light"
+            href="https://savvyfi-html.vercel.app/budgets.html?theme=light"
             target="_blank"
             class="lightPages"
           >
@@ -587,7 +510,7 @@
           </a>
           <!-- message -->
           <a
-            href="https://savvifi-html.vercel.app/message.html?theme=light"
+            href="https://savvyfi-html.vercel.app/message.html?theme=light"
             target="_blank"
             class="lightPages"
           >
@@ -605,7 +528,7 @@
           </a>
           <!-- community -->
           <a
-            href="https://savvifi-html.vercel.app/community.html?theme=light"
+            href="https://savvyfi-html.vercel.app/community.html?theme=light"
             target="_blank"
             class="lightPages"
           >
@@ -626,7 +549,7 @@
           </a>
           <!-- settings -->
           <a
-            href="https://savvifi-html.vercel.app/settings.html?theme=light"
+            href="https://savvyfi-html.vercel.app/settings.html?theme=light"
             target="_blank"
             class="lightPages"
           >
@@ -647,7 +570,7 @@
           </a>
           <!-- support -->
           <a
-            href="https://savvifi-html.vercel.app/support.html?theme=light"
+            href="https://savvyfi-html.vercel.app/support.html?theme=light"
             target="_blank"
             class="lightPages"
           >
@@ -677,7 +600,44 @@
             >
               <h3 class="text-lg font-bold lg:text-xl">Article</h3>
               <p class="text-sm">
-                React is a JavaScript library for building user interfaces.
+                Read article and learn about the latest trends.
+              </p>
+            </div>
+          </a>
+          <!-- login -->
+          <a
+            href="https://savvyfi-html.vercel.app/login.html?theme=light"
+            target="_blank"
+            class="lightPages"
+          >
+            <div class="card-effect hover:rotate-2">
+              <img src="./assets/images/lightPage/login.png" alt="Login" />
+            </div>
+            <div
+              class="relative bottom-10 mx-auto max-w-[90%] rounded-xl border border-gray-800 bg-[#1d232a] px-6 py-2"
+            >
+              <h3 class="text-lg font-bold lg:text-xl">Login</h3>
+              <p class="text-sm">For safely access login your account.</p>
+            </div>
+          </a>
+          <!-- register -->
+          <a
+            href="https://savvyfi-html.vercel.app/register.html?theme=light"
+            target="_blank"
+            class="lightPages"
+          >
+            <div class="card-effect hover:rotate-2">
+              <img
+                src="./assets/images/lightPage/register.png"
+                alt="Register"
+              />
+            </div>
+            <div
+              class="relative bottom-10 mx-auto max-w-[90%] rounded-xl border border-gray-800 bg-[#1d232a] px-6 py-2"
+            >
+              <h3 class="text-lg font-bold lg:text-xl">Register</h3>
+              <p class="text-sm">
+                To Safe your account details, register your account.
               </p>
             </div>
           </a>
@@ -685,7 +645,7 @@
           <!-- for dark page -->
           <!-- dashboard -->
           <a
-            href="https://savvifi-html.vercel.app/index.html?theme=dark"
+            href="https://savvyfi-html.vercel.app/index.html?theme=dark"
             target="_blank"
             class="darkPages hidden"
           >
@@ -697,13 +657,13 @@
             >
               <h3 class="text-lg font-bold lg:text-xl">Dashboard</h3>
               <p class="text-sm">
-               Amazing admin dashboard template for modern web applications.
+                Amazing admin dashboard template for modern web applications.
               </p>
             </div>
           </a>
           <!-- card -->
           <a
-            href="https://savvifi-html.vercel.app/my-card.html?theme=dark"
+            href="https://savvyfi-html.vercel.app/my-card.html?theme=dark"
             target="_blank"
             class="darkPages hidden"
           >
@@ -721,7 +681,7 @@
           </a>
           <!-- transactions -->
           <a
-            href="https://savvifi-html.vercel.app/transaction-1.html?theme=dark"
+            href="https://savvyfi-html.vercel.app/transaction-1.html?theme=dark"
             target="_blank"
             class="darkPages hidden"
           >
@@ -742,7 +702,7 @@
           </a>
           <!-- gols -->
           <a
-            href="https://savvifi-html.vercel.app/goals.html?theme=dark"
+            href="https://savvyfi-html.vercel.app/goals.html?theme=dark"
             target="_blank"
             class="darkPages hidden"
           >
@@ -754,13 +714,13 @@
             >
               <h3 class="text-lg font-bold lg:text-xl">Goals</h3>
               <p class="text-sm">
-                Set and track your financial goals effectively.  
+                Set and track your financial goals effectively.
               </p>
             </div>
           </a>
           <!-- gamified -->
           <a
-            href="https://savvifi-html.vercel.app/gamified-savings.html?theme=dark"
+            href="https://savvyfi-html.vercel.app/gamified-savings.html?theme=dark"
             target="_blank"
             class="darkPages hidden"
           >
@@ -772,13 +732,13 @@
             >
               <h3 class="text-lg font-bold lg:text-xl">Gamified</h3>
               <p class="text-sm">
-               Make saving fun with our gamified savings feature.
+                Make saving fun with our gamified savings feature.
               </p>
             </div>
           </a>
           <!-- insights -->
           <a
-            href="https://savvifi-html.vercel.app/insights.html?theme=dark"
+            href="https://savvyfi-html.vercel.app/insights.html?theme=dark"
             target="_blank"
             class="darkPages hidden"
           >
@@ -790,13 +750,13 @@
             >
               <h3 class="text-lg font-bold lg:text-xl">Insights</h3>
               <p class="text-sm">
-             Manage your finances with personalized insights.
+                Manage your finances with personalized insights.
               </p>
             </div>
           </a>
           <!-- budgets -->
           <a
-            href="https://savvifi-html.vercel.app/budgets.html?theme=dark"
+            href="https://savvyfi-html.vercel.app/budgets.html?theme=dark"
             target="_blank"
             class="darkPages hidden"
           >
@@ -808,13 +768,13 @@
             >
               <h3 class="text-lg font-bold lg:text-xl">Budgets</h3>
               <p class="text-sm">
-               Create and manage budgets to control your spending.
+                Create and manage budgets to control your spending.
               </p>
             </div>
           </a>
           <!-- message -->
           <a
-            href="https://savvifi-html.vercel.app/message.html?theme=dark"
+            href="https://savvyfi-html.vercel.app/message.html?theme=dark"
             target="_blank"
             class="darkPages hidden"
           >
@@ -826,13 +786,13 @@
             >
               <h3 class="text-lg font-bold lg:text-xl">Message</h3>
               <p class="text-sm">
-               Stay connected with in-app messaging features.
+                Stay connected with in-app messaging features.
               </p>
             </div>
           </a>
           <!-- community -->
           <a
-            href="https://savvifi-html.vercel.app/community.html?theme=dark"
+            href="https://savvyfi-html.vercel.app/community.html?theme=dark"
             target="_blank"
             class="darkPages hidden"
           >
@@ -847,13 +807,13 @@
             >
               <h3 class="text-lg font-bold lg:text-xl">Community</h3>
               <p class="text-sm">
-               Connect with others in the SavvyFi community.
+                Connect with others in the SavvyFi community.
               </p>
             </div>
           </a>
           <!-- settings -->
           <a
-            href="https://savvifi-html.vercel.app/settings.html?theme=dark"
+            href="https://savvyfi-html.vercel.app/settings.html?theme=dark"
             target="_blank"
             class="darkPages hidden"
           >
@@ -865,13 +825,13 @@
             >
               <h3 class="text-lg font-bold lg:text-xl">Settings</h3>
               <p class="text-sm">
-               Customize your preferences and account settings.
+                Customize your preferences and account settings.
               </p>
             </div>
           </a>
           <!-- support -->
           <a
-            href="https://savvifi-html.vercel.app/support.html?theme=dark"
+            href="https://savvyfi-html.vercel.app/support.html?theme=dark"
             target="_blank"
             class="darkPages hidden"
           >
@@ -889,7 +849,7 @@
           </a>
           <!-- article -->
           <a
-            href="https://savvifi-html.vercel.app/article-details.html?theme=dark"
+            href="https://savvyfi-html.vercel.app/article-details.html?theme=dark"
             target="_blank"
             class="darkPages hidden"
           >
@@ -904,7 +864,7 @@
             >
               <h3 class="text-lg font-bold lg:text-xl">Article</h3>
               <p class="text-sm">
-                React is a JavaScript library for building user interfaces.
+                Read article and learn about the latest trends.
               </p>
             </div>
           </a>
@@ -930,22 +890,24 @@
             </h2>
 
             <p class="mx-auto my-6 max-w-md text-center">
-              With Tailux, building modern, scalable applications is a breeze.
+              With SavvyFi, building modern, scalable dashboard is a breeze.
               Enjoy lightning-fast performance and smooth efficiency to bring
               your project!
             </p>
             <div class="flex items-center justify-center">
-              <button type="button" class="btn">
-                <strong>Get Now</strong>
-                <div id="container-stars">
-                  <div id="stars"></div>
-                </div>
+              <a href="https://themeforest.net/user/pixelaxis" target="_blank">
+                <button type="button" class="btn">
+                  <strong>Get Now</strong>
+                  <div id="container-stars">
+                    <div id="stars"></div>
+                  </div>
 
-                <div id="glow">
-                  <div class="circle"></div>
-                  <div class="circle"></div>
-                </div>
-              </button>
+                  <div id="glow">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                  </div>
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -956,11 +918,6 @@
         class="flex items-center justify-between border-t border-gray-800 py-8"
       >
         <div class="flex items-center gap-2">
-          <img
-            src="./assets/images/logo.png"
-            alt="logo"
-            class="h-8 w-8 sm:h-12 sm:w-12"
-          />
           <h5 class="text-xs font-bold text-white sm:text-sm md:text-lg">
             SavvyFi
           </h5>

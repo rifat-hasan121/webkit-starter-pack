@@ -97,7 +97,7 @@ export default {
     watchFiles: ["./src/**/*", "./src/assets/css/*.css"],
     hot: false, // Disable HMR to ensure full reload on partial changes
     liveReload: true, // Enable full page reload on changes
-    port: 5000,
+    port: 5001,
   },
   module: {
     rules: [

@@ -25,11 +25,20 @@
   @apply group-hover:rotate-360 transition-transform duration-500;
 }
 
+/* for cards */
+.feature-card{
+  @apply flex flex-col justify-center gap-4 rounded-xl border border-gray-800 p-6
+}
+
 /* for the template */
 .card-effect{
   @apply relative cursor-pointer rounded-xl border border-gray-800 p-6 transition-all duration-300 ease-in-out hover:scale-110
 }
 
+/* for technology */
+.page-card{
+  @apply  cursor-pointer gap-4 rounded-xl border border-gray-800 p-6
+}
 
 
 .rotate-360 {
@@ -373,4 +382,15 @@ button:hover span {
   100% {
     background-position: 0% 50%;
   }
+}
+
+/* hero bg animation */
+
+#starCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
 }
